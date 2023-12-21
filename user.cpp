@@ -26,6 +26,7 @@ int main()
     cin >> fname;
     cout << "Your first name is: " << fname << endl;
 
+    // array as input
     int size = 5;
     string input[size];
 
@@ -36,6 +37,5 @@ int main()
     cout << "The array elements are: ";
     for (int i = 0; i < size; i++)
     {cout << input[i] << " ";}
-
     return 0;
 }
