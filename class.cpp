@@ -22,7 +22,12 @@ int main()
     s2.name = "motu";
     cout << "Name: " << s2.name << endl;
     cout << "Marks: " << s2.marks << endl;
-
+    
+    Student s3;
+    s3.marks =45;
+    s3.name="rakshya";
+    cout << "Name: " << s3.name << endl;
+    cout << "Marks: " << s3.marks << endl;
     
 
     return 0;
