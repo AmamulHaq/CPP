@@ -25,11 +25,13 @@ int main()
 
     if (c.amount > 1500)
     {
-        cout << "congratulation " << c.name << ", your amount is: " << c.amount << endl;
+        int amount;
+        amount = c.amount - 0.05 * c.amount;
+        cout << "congratulation " << c.name << ", your amount with 5 percent discount is: " << amount << endl;
     }
     else
     {
-        cout << "hey " << c.name << ", your current amount is: " << c.amount << endl;
+        cout << "hey " << c.name << ", your net amount to pay is: " << c.amount << endl;
     }
 
     return 0;
