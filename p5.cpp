@@ -1,28 +1,37 @@
 #include <iostream>
-#include <string>
-#include <cmath>
-
 using namespace std;
-
-class products
+class customer
 {
-    int jacket, coat, shoe;
+    char name[30];
+    char productname[30];
+    double price;
 
 public:
-    products(int j = 600, int c = 800, int s = 900) : jacket(j), coat(c), shoe(s){};
-
-    int netAmount()
+    void getdata()
     {
-        return jacket + coat + shoe;
-    };
+        cout << "enter the details" << endl;
+        cin >> name >> productname >> price;
+    }
+    void discount()
+    {
+        if (price >= 20000)
+        {
+            price = 0.95 * price;
+        }
+    }
+    void display()
+    {
+        cout << "the details are:" << endl;
+        cout << name << endl
+             << productname << endl
+             << price << endl;
+    }
 };
 int main()
 {
-
-    products product;
-
-    int amount = product.netAmount();
-    cout << "The total amount is: " << amount << endl;
-
+    customer c;
+    c.getdata();
+    c.discount();
+    c.display();
     return 0;
 }
