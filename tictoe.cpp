@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 char value[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
-char turn;
+char turn='x';
 int row,col,num;
 
 void display(){
@@ -17,20 +17,10 @@ cout<<"\t_____|_____|_____\n";
 cout<<"\t     |     |     \n";
 cout<<"\t  "<<value[2][0]<<"  |  "<<value[2][1]<<"  |  "<<value[2][2]<<"  \n";
 cout<<"\t     |     |     \n";
-
-};
-void Turn(){
-
-
-switch(turn){
-    case 'x': cout<<"\n\tPlayer1 [X] turn: ";break;
-
-    case 'o': cout<<"\n\tPlayer2 [O] turn: ";break;    
-}
-
-
+cout<<"\n\tTurn of player ["<<turn<<"]:"<<endl;
 };
 void select(){
+    cin>>num;
     switch(num){
 case 1: row=0; col=0; break;
 case 2: row=0; col=1; break;
@@ -41,18 +31,32 @@ case 6: row=1; col=2; break;
 case 7: row=2; col=0; break;
 case 8: row=2; col=1; break;
 case 9: row=2; col=2; break;
+default:cout<<"invalid choice";break;
 
-}
+}};
+
+
+
+
+
+void result(){
+
 
 
 
 };
+
+
+
 int main(){
     display();
-    Turn();
+    for(int i;i<9;i++){
     select();
-    
-    
-    
+    switch(turn){
+    case 'x':value[row][col]='x'; turn = 'o'; break;
+
+    case 'o':value[row][col]='o'; turn = 'x';break;};
+    display(); }
+       
     
     return 0;}
