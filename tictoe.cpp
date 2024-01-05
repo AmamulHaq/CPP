@@ -6,6 +6,7 @@ char turn='x';
 int row,col,num;
 
 void display(){
+system("cls");
 cout<<"\n\t\tTIK TAK TOE\n";
 cout<<"\t\tPlayer1=[x]\n\t\tPlayer2=[0]\n";
 cout<<"\t     |     |     \n";
@@ -53,9 +54,8 @@ int main(){
     for(int i;i<9;i++){
     select();
     switch(turn){
-    case 'x':value[row][col]='x'; turn = 'o'; break;
-
-    case 'o':value[row][col]='o'; turn = 'x';break;};
+    case 'x':if(value[row][col]!='x' && value[row][col]!='o'){value[row][col]='x'; turn = 'o';}else{cout<<"\nInvalid location!";}; break;
+    case 'o':if(value[row][col]!='x' && value[row][col]!='o'){value[row][col]='0'; turn = 'x';}else{cout<<"\nInvalid location!";}; break;}
     display(); }
        
     
