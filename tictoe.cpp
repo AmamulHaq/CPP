@@ -71,22 +71,22 @@ bool checkWin() {
     for (int i = 0; i < 3; i++) {
         if (value[i][0] == value[i][1] && value[i][0] == value[i][2]) {
             cout << "Player " << value[i][0] << " wins!" << endl;
-            return true;
+            return 0;
         }
         if (value[0][i] == value[1][i] && value[0][i] == value[2][i]) {
             cout << "Player " << value[0][i] << " wins!" << endl;
-            return true;
+            return 0;
         }
     }
 
     if (value[0][0] == value[1][1] && value[0][0] == value[2][2]) {
         cout << "Player " << value[0][0] << " wins!" << endl;
-        return true;
+        return 0;
     }
 
     if (value[0][2] == value[1][1] && value[0][2] == value[2][0]) {
         cout << "Player " << value[0][2] << " wins!" << endl;
-        return true;
+        return 0;
     }
 
     return false;
