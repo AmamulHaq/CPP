@@ -17,7 +17,7 @@ int main()
 {
     employee E[10];
 
-    for (int i = 0; i < 9; i++) // Fix loop condition
+    for (int i = 0; i < 9; i++)
     {
         cout << "Enter name: ";
         cin >> E[i].name;
