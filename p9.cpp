@@ -4,4 +4,7 @@
 
 using namespace std;
 int main()
-{}
+{
+//bye sorry
+    return 0;
+}
