@@ -1,10 +1,24 @@
 #include <iostream>
-#include <string>
-#include <cmath>
-
 using namespace std;
+
+int fibonacci(int n)
+{
+
+    if (n <= 1)
+    {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
 int main()
 {
-//bye sorry to be busy
+    int n;
+
+    cout << "Enter the position of the Fibonacci number: ";
+    cin >> n;
+
+    cout << "Fibonacci number at position " << n << " is: " << fibonacci(n) << endl;
+
     return 0;
 }
