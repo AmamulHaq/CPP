@@ -5,6 +5,6 @@
 using namespace std;
 int main()
 {
-//bye sorry
+//bye sorry to be busy
     return 0;
 }
