@@ -27,8 +27,8 @@ int main()
 
     box myBox(10, 5.5, 3.5);
 
-    // Calling the volume method on the created object
     myBox.volume();
 
     return 0;
 }
+
