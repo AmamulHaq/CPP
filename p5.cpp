@@ -9,7 +9,7 @@ class customer
 public:
     void getdata()
     {
-        cout << "enter the details" << endl;
+        cout << "enter name , product name, and its price: " << endl;
         cin >> name >> productname >> price;
     }
     void discount()
