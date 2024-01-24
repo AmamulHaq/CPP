@@ -17,7 +17,7 @@ int main()
 {
     employee E[10];
 
-    for (int i = 0; i < 9; i++)
+    for (int i = 0; i < 4; i++)
     {
         cout << "Enter name: ";
         cin >> E[i].name;
@@ -29,7 +29,7 @@ int main()
         cin >> E[i].salary;
     }
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 4; i++)
     {
         cout << "The name of employee is: " << E[i].name << endl;
         cout << "The address of employee is: " << E[i].address << endl;
