@@ -24,6 +24,6 @@ int main()
     d2.inc();
     d1.show();
     d2.show();
-
+//GOOD NIGHT
     return 0;
 }
