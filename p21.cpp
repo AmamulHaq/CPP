@@ -9,6 +9,7 @@ void add(double a, double b)
 cout << endl << "sum = " << (a + b);
 }
 // Driver code
+//no contribution today
 int main()
 {
 add(10, 2);
