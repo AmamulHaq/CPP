@@ -47,6 +47,16 @@ int main()
     {
         BEI[i].display();
     }
-
+    Class Computer[3];
+    cout << "Enter details of Computer students\n";
+    for (int i = 0; i < 3; i++)
+    {
+        Computer[i].input();
+    }
+    cout << "\nStudent details:\n";
+    for (int i = 0; i < 3; i++)
+    {
+        Computer[i].display();
+    }
     return 0;
 }
