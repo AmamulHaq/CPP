@@ -26,7 +26,7 @@ int main()
     cin >> fname;
     cout << "Your first name is: " << fname << endl;
 
-    // array as input
+    
     int size = 5;
     string input[size];
 
