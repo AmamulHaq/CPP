@@ -24,7 +24,7 @@ public:
         m = m2;
         this->cm = cm; // Use "this->" to distinguish member variables
     }
-};
+};// accessment time .. no time to contribute
 
 int main() {
     D1 d1;
