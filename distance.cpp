@@ -2,7 +2,7 @@
 using namespace std;
 
 class D1 {
-    int f, i; // These variables need to be accessible from D2
+    int f, i; 
 public:
     void get() {
         cin >> f >> i;
@@ -24,7 +24,7 @@ public:
         m = m2;
         this->cm = cm; // Use "this->" to distinguish member variables
     }
-};// accessment time .. no time to contribute
+};// accessment time .. same again
 
 int main() {
     D1 d1;
