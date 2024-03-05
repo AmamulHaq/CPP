@@ -42,8 +42,8 @@ public:
 int main()
 {
     complex c1(1, 2), c2(3, 4);
-    add(c1, c2);
+    add(c1, c2);//friend function call
 
-    AddClass c3(c1, c2); 
+    AddClass c3(c1, c2);//friend class constructor call
     return 0;
 }
