@@ -19,7 +19,7 @@ int main()
     DT1.display();
 
     DefaultTemplate<float, int> DT2(24.24, 42);
-    DT2.display();
 
     return 0;
 }
+//no contribution
