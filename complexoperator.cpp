@@ -2,15 +2,12 @@
 using namespace std;
 class complex
 {
-public:
+private:
     float real;
     float imag;
-    complex()
-    {
-        real = 0;
-        imag = 0;
-    }
-    complex(float r, float i)
+
+public:
+    complex(float r = 0, float i = 0)
     {
         real = r;
         imag = i;
@@ -19,8 +16,9 @@ public:
     {
         return complex(real + c2.real, imag + c2.imag);
     }
-    void display(){
-        cout<<real<<" + "<<imag<<"i"<<endl;
+    void display()
+    {
+        cout << real << " + " << imag << "i" << endl;
     }
 };
 
