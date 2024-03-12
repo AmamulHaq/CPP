@@ -2,28 +2,24 @@
 using namespace std;
 class complex
 {
-public:
+private:
     float real;
     float imag;
-    complex()
-    {
-        real = 0;
-        imag = 0;
-    }
-    complex(float r, float i)
+public:
+    complex(float r=0, float i=0)
     {
         real = r;
         imag = i;
-    }
-    friend complex operator+(complex c1, complex c2);
+    }   
     void display()
     {
         cout << real << " + " << imag << "i" << endl;
     }
+    friend complex operator+(complex c1, complex c2);
 };
 
 complex operator+(complex c1, complex c2){
-    {return complex(c1.real + c2.real, c1.imag + c2.imag);}
+    return complex(c1.real + c2.real, c1.imag + c2.imag);
 };
 
 int main()

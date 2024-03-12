@@ -24,8 +24,8 @@ public:
 
 int main()
 {
-    complex c1(4, 3), c2(3, -4);
-    complex c3 = c1 + c2;
+    complex c1(4, 3), c2(3, -4), c3;
+    c3 = c1 + c2;
     c3.display();
     return 0;
 }
