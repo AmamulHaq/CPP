@@ -1,4 +1,4 @@
-//Rock Scissor Paper 
+//Rock Scissor Paper in cpp
 #include <iostream>
 #include <cstdlib>
 
