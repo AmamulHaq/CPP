@@ -1,4 +1,5 @@
 #include <iostream>
+//constructor with function 
 using namespace std;
 
 class Complex
