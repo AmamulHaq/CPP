@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Sum1
@@ -10,7 +11,7 @@ public:
     {
         a = v;
     }
-    friend class Sum2; // Friend of class Sum1
+    friend class Sum2;
 };
 
 class Sum2
@@ -24,7 +25,7 @@ public:
         b = v;
     }
 
-float Add(Sum1 s1, Sum2 s2)//member function of Sum2
+float Add(Sum1 s1, Sum2 s2)
 {
     float s;
     s = s1.a + s2.b;
