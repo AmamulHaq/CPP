@@ -1,4 +1,5 @@
 #include <iostream>
+//object as argument 
 using namespace std;
 
 class Sum
