@@ -1,4 +1,5 @@
 #include <iostream>
+//access private data 
 using namespace std;
 class s1
 {
