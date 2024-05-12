@@ -1,4 +1,5 @@
 #include <iostream>
+//constructor 
 using namespace std;
 class Sum
 {
