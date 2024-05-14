@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+//normal input output 
 
 using namespace std;
 
