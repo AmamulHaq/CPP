@@ -1,4 +1,4 @@
-//operator overloading greater than
+
 #include<iostream>
 using namespace std;
 class value{
