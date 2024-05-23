@@ -6,7 +6,7 @@ private:
     float mark;
 
 public:
-//can access data members and memory address of an object
+
     void getmark(float mark)
     {
         this->mark = mark;
